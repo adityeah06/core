@@ -45,10 +45,10 @@ SCAN_INTERVAL = timedelta(minutes=30)
 
 
 def setup_platform(
-    hass: HomeAssistant,
+  
     config: ConfigType,
     add_entities: AddEntitiesCallback,
-    discovery_info: DiscoveryInfoType | None = None,
+   
 ) -> None:
     """Set up the Zestimate sensor."""
     name = config.get(CONF_NAME)
