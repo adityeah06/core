@@ -14,7 +14,7 @@ from homeassistant.components.light import (
     LightEntity,
 )
 from homeassistant.const import CONF_DEVICES, CONF_ID, CONF_NAME
-from homeassistant.core import HomeAssistant
+
 import homeassistant.helpers.config_validation as cv
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
@@ -43,10 +43,10 @@ def get_unit_status(code):
 
 
 def setup_platform(
-    hass: HomeAssistant,
+ 
     config: ConfigType,
     add_entities: AddEntitiesCallback,
-    discovery_info: DiscoveryInfoType | None = None,
+
 ) -> None:
     """Set up the x10 Light platform."""
     is_cm11a = True
