@@ -8,7 +8,6 @@ from pyvlx import Intensity, LighteningDevice
 from homeassistant.components.light import ATTR_BRIGHTNESS, ColorMode, LightEntity
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
-from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
 
 from . import DATA_VELUX, VeluxEntity
 
